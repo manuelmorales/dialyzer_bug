@@ -1,7 +1,16 @@
 # DialyzerBug
 
-This is a reproduction of a potential bug I submitted to Dialyxir.
-Dialyxir doesn't seem to realize that I'm passing wrong arguments to HTTPoison:
+This is a reproduction of a potential bug I submitted to Dialyxir:
+https://github.com/jeremyjh/dialyxir/issues/88.
+Use:
+
+```
+git clone git@github.com:manuelmorales/dialyzer_bug.git
+mix deps.get
+mix dialyzer
+```
+
+The issue is that Dialyxir doesn't seem to realize that I'm passing wrong arguments to HTTPoison.
 
 ```elixir
 # dialyzer_bug/lib/dialyzer_bug.ex
